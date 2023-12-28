@@ -95,9 +95,9 @@
 
             bindings = <
         &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4     &kp NUMBER_5                  &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0
-&trans  &bt BT_NXT    &trans          &kp UP_ARROW    &trans           &kp LBKT                      &kp MINUS       &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp GRAVE
-&trans  &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LPAR      &trans  &trans  &kp UNDERSCORE  &kp PLUS      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PIPE       &kp TILDE
-                                      &trans          &trans           &trans        &trans  &trans  &kp DELETE      &kp KP_N0     &trans
+&trans  &bt BT_NXT    &trans          &kp UP_ARROW    &trans           &trans                        &kp MINUS       &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp GRAVE
+&trans  &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans        &trans  &trans  &kp UNDERSCORE  &kp PLUS      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PIPE       &kp TILDE
+                                      &trans          &trans           &trans        &trans  &trans  &trans          &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -122,10 +122,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-           &trans     &trans     &trans      &trans  &trans                  &trans     &trans     &kp RA(U)         &trans             &trans
-&kp RA(A)  &kp MINUS  &kp RA(S)  &trans      &trans  &trans                  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp GRAVE
-&trans     &trans     &trans     &trans      &trans  &trans  &trans  &trans  &kp UNDER  &kp PLUS   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PIPE       &kp TILDE
-                                 &mo ADJUST  &trans  &trans  &trans  &trans  &trans     &trans     &trans
+           &trans     &trans          &trans          &trans           &trans                  &trans     &trans     &kp RA(U)          &trans             &trans
+&kp RA(A)  &kp MINUS  &kp RA(S)       &kp UP_ARROW    &trans           &trans                  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp BACKSLASH  &kp GRAVE
+&trans     &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &kp UNDER  &kp PLUS   &kp LEFT_BRACE     &kp RIGHT_BRACE    &kp PIPE       &kp TILDE
+                                      &mo ADJUST      &trans           &trans  &trans  &trans  &trans     &trans     &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
